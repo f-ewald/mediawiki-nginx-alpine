@@ -1,4 +1,5 @@
 # Mediawiki 1.35.0 nginx/alpine
+![https://img.shields.io/docker/cloud/build/fewald/mediawiki-nginx-alpine](https://img.shields.io/docker/cloud/build/fewald/mediawiki-nginx-alpine)
 
 First, start the image to run the graphical installer, then download the `LocalSettings.php`.
 
