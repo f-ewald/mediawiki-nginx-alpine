@@ -19,3 +19,5 @@ docker run -p 8080:8080 -v LocalSettings.php:/var/www/html/LocalSettings.php few
 ## Defaults
 
 * The maximum file upload size is 100 megabytes
+* Visual Editor available
+* imagemagick installed
