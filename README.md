@@ -13,7 +13,12 @@ docker run -p 8080:8080 fewald/mediawiki-nginx-alpine
 Replace `LocalSettings.php` with
 
 ```
-docker run -p 8080:8080 -v LocalSettings.php:/var/www/html/LocalSettings.php fewald/mediawiki-nginx-alpine
+docker run \
+  -p 8080:8080 \
+  -v $(pwd)/logo.png:/var/www/html/resources/assets/wiki.png \
+  -v $(pwd)/LocalSettings.php:/var/www/html/LocalSettings.php \
+  -v $(pwd)/data:/var/www/data \
+  fewald/mediawiki-nginx-alpine
 ```
 
 ## Defaults
